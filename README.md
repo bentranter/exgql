@@ -18,3 +18,5 @@ You need all the code from Facebook's GQL parser, so clone that. In that repo, c
 8. Test it: `GQL.test()`. The test will parse the string `{user(id: 1) {name age friends { name } } }` and return a JSON string.
 
 Warning: This **will** segfault if there's a parse error... I'm sorry for this, I'll fix it one day.
+
+If you wish to write some code based on this, you'll need to actually handle the errors sent to the NIF funcs. Maybe one day I'll do this on my own.
